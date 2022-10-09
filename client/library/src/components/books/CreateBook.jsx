@@ -64,6 +64,7 @@ const CreateBook = (props) => {
       <div>
         <label>Author</label>
         <select name="author" onChange={handleChange}>
+          <option>Blank</option>
           {props.authors.map((c) => {
             return (
               <option key={c.id} value={c.id}>
